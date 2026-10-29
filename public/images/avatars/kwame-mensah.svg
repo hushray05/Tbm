@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg-kwame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="skin-kwame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="60" fill="url(#bg-kwame)"/>
+  <!-- Head & Neck -->
+  <rect x="52" y="65" width="16" height="20" rx="4" fill="url(#skin-kwame)"/>
+  <ellipse cx="60" cy="52" rx="22" ry="24" fill="url(#skin-kwame)"/>
+  <!-- Short hair -->
+  <ellipse cx="60" cy="38" rx="22" ry="14" fill="#18181b"/>
+  <!-- Beard -->
+  <path d="M42 55 Q60 82 78 55 Q74 76 60 76 Q46 76 42 55 Z" fill="#18181b"/>
+  <!-- Eyes -->
+  <ellipse cx="50" cy="50" rx="2.5" ry="3" fill="#18181b"/>
+  <ellipse cx="70" cy="50" rx="2.5" ry="3" fill="#18181b"/>
+  <circle cx="51" cy="49" r="0.8" fill="#ffffff"/>
+  <circle cx="71" cy="49" r="0.8" fill="#ffffff"/>
+  <!-- Smile -->
+  <path d="M53 62 Q60 67 67 62" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Suit -->
+  <path d="M28 115 Q34 85 60 85 Q86 85 92 115 Z" fill="#1e293b"/>
+  <polygon points="54,85 66,85 60,115" fill="#f8fafc"/>
+  <polygon points="57,87 63,87 60,110" fill="#d97706"/>
+</svg>

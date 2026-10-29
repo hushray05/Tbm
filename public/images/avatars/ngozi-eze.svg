@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg-ngozi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <linearGradient id="skin-ngozi" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#854d0e"/>
+      <stop offset="100%" stop-color="#582d09"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="60" fill="url(#bg-ngozi)"/>
+  <!-- Hair bun -->
+  <circle cx="60" cy="28" r="14" fill="#18181b"/>
+  <!-- Head & Neck -->
+  <rect x="52" y="65" width="16" height="20" rx="4" fill="url(#skin-ngozi)"/>
+  <ellipse cx="60" cy="52" rx="22" ry="24" fill="url(#skin-ngozi)"/>
+  <!-- Hair -->
+  <path d="M36 48 Q60 26 84 48 Q76 34 60 34 Q44 34 36 48 Z" fill="#18181b"/>
+  <!-- Eyes -->
+  <ellipse cx="50" cy="52" rx="2.5" ry="3" fill="#18181b"/>
+  <ellipse cx="70" cy="52" rx="2.5" ry="3" fill="#18181b"/>
+  <circle cx="51" cy="51" r="0.8" fill="#ffffff"/>
+  <circle cx="71" cy="51" r="0.8" fill="#ffffff"/>
+  <!-- Smile -->
+  <path d="M53 65 Q60 70 67 65" stroke="#f43f5e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Clothes -->
+  <path d="M28 115 Q34 85 60 85 Q86 85 92 115 Z" fill="#3b0764"/>
+  <polygon points="52,85 68,85 60,110" fill="#a855f7"/>
+</svg>

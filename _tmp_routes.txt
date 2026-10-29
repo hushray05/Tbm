@@ -1,0 +1,211 @@
+﻿
+  GET|HEAD        / ..................................................................... home ΓÇ║ PublicController@home
+  GET|HEAD        about ............................................................... about ΓÇ║ PublicController@about
+  GET|HEAD        admin .................................................................. admin. ΓÇ║ routes/web.php:261
+  GET|HEAD        admin/audit-logs ...................... admin.audit-logs.index ΓÇ║ Admin\AdminAuditLogController@index
+  GET|HEAD        admin/businesses ...................... admin.businesses.index ΓÇ║ Admin\AdminBusinessController@index
+  GET|HEAD        admin/businesses/{business} ............. admin.businesses.show ΓÇ║ Admin\AdminBusinessController@show
+  PUT|PATCH       admin/businesses/{business} ......... admin.businesses.update ΓÇ║ Admin\AdminBusinessController@update
+  GET|HEAD        admin/businesses/{business}/edit ........ admin.businesses.edit ΓÇ║ Admin\AdminBusinessController@edit
+  POST            admin/businesses/{business}/toggle admin.businesses.toggle ΓÇ║ Admin\AdminBusinessController@toggleStΓÇª
+  GET|HEAD        admin/companies ......................... admin.companies.index ΓÇ║ Admin\AdminCompanyController@index
+  POST            admin/companies ......................... admin.companies.store ΓÇ║ Admin\AdminCompanyController@store
+  PUT|PATCH       admin/companies/{company} ............. admin.companies.update ΓÇ║ Admin\AdminCompanyController@update
+  DELETE          admin/companies/{company} ........... admin.companies.destroy ΓÇ║ Admin\AdminCompanyController@destroy
+  GET|HEAD        admin/currencies ...................... admin.currencies.index ΓÇ║ Admin\AdminCurrencyController@index
+  GET|HEAD        admin/currencies-sync .............. admin.currencies.sync ΓÇ║ Admin\AdminCurrencyController@syncRates
+  PUT             admin/currencies/{currency} ......... admin.currencies.update ΓÇ║ Admin\AdminCurrencyController@update
+  GET|HEAD        admin/currencies/{currency}/edit ........ admin.currencies.edit ΓÇ║ Admin\AdminCurrencyController@edit
+  POST            admin/currencies/{currency}/toggle .. admin.currencies.toggle ΓÇ║ Admin\AdminCurrencyController@toggle
+  GET|HEAD        admin/dashboard ............................. admin.dashboard ΓÇ║ Admin\AdminDashboardController@index
+  GET|HEAD        admin/feedback .......................... admin.feedback.index ΓÇ║ Admin\AdminFeedbackController@index
+  DELETE          admin/feedback/{feedback} ........... admin.feedback.destroy ΓÇ║ Admin\AdminFeedbackController@destroy
+  POST            admin/feedback/{feedback}/status admin.feedback.status ΓÇ║ Admin\AdminFeedbackController@updateStatus
+  GET|HEAD        admin/inventory ....................... admin.inventory.index ΓÇ║ Admin\AdminInventoryController@index
+  POST            admin/inventory/{product}/adjust .... admin.inventory.adjust ΓÇ║ Admin\AdminInventoryController@adjust
+  GET|HEAD        admin/invoices ........................... admin.invoices.index ΓÇ║ Admin\AdminInvoiceController@index
+  DELETE          admin/invoices/{invoice} ............. admin.invoices.destroy ΓÇ║ Admin\AdminInvoiceController@destroy
+  POST            admin/invoices/{invoice}/status .. admin.invoices.status ΓÇ║ Admin\AdminInvoiceController@updateStatus
+  GET|HEAD        admin/leads .................................... admin.leads.index ΓÇ║ Admin\AdminLeadController@index
+  POST            admin/leads .................................... admin.leads.store ΓÇ║ Admin\AdminLeadController@store
+  GET|HEAD        admin/leads/create ........................... admin.leads.create ΓÇ║ Admin\AdminLeadController@create
+  GET|HEAD        admin/leads/{lead} ............................... admin.leads.show ΓÇ║ Admin\AdminLeadController@show
+  PUT|PATCH       admin/leads/{lead} ........................... admin.leads.update ΓÇ║ Admin\AdminLeadController@update
+  DELETE          admin/leads/{lead} ......................... admin.leads.destroy ΓÇ║ Admin\AdminLeadController@destroy
+  GET|HEAD        admin/leads/{lead}/edit .......................... admin.leads.edit ΓÇ║ Admin\AdminLeadController@edit
+  GET|HEAD        admin/messages ........................... admin.messages.index ΓÇ║ Admin\AdminMessageController@index
+  DELETE          admin/messages/{message} ............. admin.messages.destroy ΓÇ║ Admin\AdminMessageController@destroy
+  POST            admin/messages/{message}/read ........ admin.messages.read ΓÇ║ Admin\AdminMessageController@markAsRead
+  GET|HEAD        admin/notifications ............. admin.notifications ΓÇ║ Admin\AdminDashboardController@notifications
+  GET|HEAD        admin/pages .................................... admin.pages.index ΓÇ║ Admin\AdminPageController@index
+  PUT             admin/pages/{page} ........................... admin.pages.update ΓÇ║ Admin\AdminPageController@update
+  GET|HEAD        admin/pages/{page}/edit .......................... admin.pages.edit ΓÇ║ Admin\AdminPageController@edit
+  GET|HEAD        admin/products ........................... admin.products.index ΓÇ║ Admin\AdminProductController@index
+  POST            admin/products ........................... admin.products.store ΓÇ║ Admin\AdminProductController@store
+  GET|HEAD        admin/products/create .................. admin.products.create ΓÇ║ Admin\AdminProductController@create
+  GET|HEAD        admin/products/{product} ................... admin.products.show ΓÇ║ Admin\AdminProductController@show
+  PUT|PATCH       admin/products/{product} ............... admin.products.update ΓÇ║ Admin\AdminProductController@update
+  DELETE          admin/products/{product} ............. admin.products.destroy ΓÇ║ Admin\AdminProductController@destroy
+  GET|HEAD        admin/products/{product}/edit .............. admin.products.edit ΓÇ║ Admin\AdminProductController@edit
+  GET|HEAD        admin/profile ................................... admin.profile ΓÇ║ Admin\AdminProfileController@index
+  PUT             admin/profile ........................... admin.profile.update ΓÇ║ Admin\AdminProfileController@update
+  PUT             admin/profile/password ........ admin.profile.password ΓÇ║ Admin\AdminProfileController@updatePassword
+  GET|HEAD        admin/subscriptions/dashboard admin.subscriptions.dashboard ΓÇ║ Admin\AdminSubscriptionController@dasΓÇª
+  GET|HEAD        admin/subscriptions/features admin.subscriptions.features.index ΓÇ║ Admin\AdminFeatureController@index
+  POST            admin/subscriptions/features admin.subscriptions.features.store ΓÇ║ Admin\AdminFeatureController@store
+  PUT|PATCH       admin/subscriptions/features/{feature} admin.subscriptions.features.update ΓÇ║ Admin\AdminFeatureContΓÇª
+  DELETE          admin/subscriptions/features/{feature} admin.subscriptions.features.destroy ΓÇ║ Admin\AdminFeatureConΓÇª
+  GET|HEAD        admin/subscriptions/invoices admin.subscriptions.invoices.index ΓÇ║ Admin\AdminSubscriptionControllerΓÇª
+  GET|HEAD        admin/subscriptions/payments admin.subscriptions.payments.index ΓÇ║ Admin\AdminSubscriptionControllerΓÇª
+  GET|HEAD        admin/subscriptions/plans admin.subscriptions.plans.index ΓÇ║ Admin\AdminSubscriptionPlanController@iΓÇª
+  POST            admin/subscriptions/plans admin.subscriptions.plans.store ΓÇ║ Admin\AdminSubscriptionPlanController@sΓÇª
+  GET|HEAD        admin/subscriptions/plans/create admin.subscriptions.plans.create ΓÇ║ Admin\AdminSubscriptionPlanContΓÇª
+  GET|HEAD        admin/subscriptions/plans/{plan} admin.subscriptions.plans.show ΓÇ║ Admin\AdminSubscriptionPlanControΓÇª
+  PUT|PATCH       admin/subscriptions/plans/{plan} admin.subscriptions.plans.update ΓÇ║ Admin\AdminSubscriptionPlanContΓÇª
+  DELETE          admin/subscriptions/plans/{plan} admin.subscriptions.plans.destroy ΓÇ║ Admin\AdminSubscriptionPlanConΓÇª
+  POST            admin/subscriptions/plans/{plan}/duplicate admin.subscriptions.plans.duplicate ΓÇ║ Admin\AdminSubscriΓÇª
+  GET|HEAD        admin/subscriptions/plans/{plan}/edit admin.subscriptions.plans.edit ΓÇ║ Admin\AdminSubscriptionPlanCΓÇª
+  POST            admin/subscriptions/plans/{plan}/toggle admin.subscriptions.plans.toggle ΓÇ║ Admin\AdminSubscriptionPΓÇª
+  GET|HEAD        admin/subscriptions/settings admin.subscriptions.settings.index ΓÇ║ Admin\AdminSubscriptionControllerΓÇª
+  POST            admin/subscriptions/settings admin.subscriptions.settings.update ΓÇ║ Admin\AdminSubscriptionControlleΓÇª
+  GET|HEAD        admin/subscriptions/subscribers admin.subscriptions.subscribers.index ΓÇ║ Admin\AdminSubscriptionContΓÇª
+  GET|HEAD        admin/subscriptions/subscribers/{subscription} admin.subscriptions.subscribers.show ΓÇ║ Admin\AdminSuΓÇª
+  POST            admin/subscriptions/subscribers/{subscription}/action admin.subscriptions.subscribers.action ΓÇ║ AdmiΓÇª
+  GET|HEAD        admin/subscriptions/trials admin.subscriptions.trials.index ΓÇ║ Admin\AdminSubscriptionController@triΓÇª
+  GET|HEAD        admin/tasks .................................... admin.tasks.index ΓÇ║ Admin\AdminTaskController@index
+  POST            admin/tasks .................................... admin.tasks.store ΓÇ║ Admin\AdminTaskController@store
+  GET|HEAD        admin/tasks/create ........................... admin.tasks.create ΓÇ║ Admin\AdminTaskController@create
+  GET|HEAD        admin/tasks/{task} ............................... admin.tasks.show ΓÇ║ Admin\AdminTaskController@show
+  PUT|PATCH       admin/tasks/{task} ........................... admin.tasks.update ΓÇ║ Admin\AdminTaskController@update
+  DELETE          admin/tasks/{task} ......................... admin.tasks.destroy ΓÇ║ Admin\AdminTaskController@destroy
+  GET|HEAD        admin/tasks/{task}/edit .......................... admin.tasks.edit ΓÇ║ Admin\AdminTaskController@edit
+  GET|HEAD        admin/tickets .............................. admin.tickets.index ΓÇ║ Admin\AdminTicketController@index
+  POST            admin/tickets .............................. admin.tickets.store ΓÇ║ Admin\AdminTicketController@store
+  GET|HEAD        admin/tickets/create ..................... admin.tickets.create ΓÇ║ Admin\AdminTicketController@create
+  GET|HEAD        admin/tickets/{ticket} ....................... admin.tickets.show ΓÇ║ Admin\AdminTicketController@show
+  PUT|PATCH       admin/tickets/{ticket} ................... admin.tickets.update ΓÇ║ Admin\AdminTicketController@update
+  DELETE          admin/tickets/{ticket} ................. admin.tickets.destroy ΓÇ║ Admin\AdminTicketController@destroy
+  GET|HEAD        admin/tickets/{ticket}/edit .................. admin.tickets.edit ΓÇ║ Admin\AdminTicketController@edit
+  GET|HEAD        admin/users ...................... admin.users.index ΓÇ║ Admin\AdminSubscriptionController@subscribers
+  GET|HEAD        businesses ............................................. businesses.index ΓÇ║ BusinessController@index
+  POST            businesses ............................................. businesses.store ΓÇ║ BusinessController@store
+  GET|HEAD        businesses/create .................................... businesses.create ΓÇ║ BusinessController@create
+  POST            businesses/switch ............................ businesses.switch ΓÇ║ BusinessController@switchBusiness
+  POST            businesses/{business}/locations ...... businesses.locations.store ΓÇ║ BusinessController@storeLocation
+  GET|HEAD        cart ........................................................... cart.index ΓÇ║ PosCartController@cart
+  POST            cart/add .................................................... cart.add ΓÇ║ PosCartController@addToCart
+  POST            cart/checkout ........................................... cart.checkout ΓÇ║ PosCartController@checkout
+  POST            cart/clear ................................................ cart.clear ΓÇ║ PosCartController@clearCart
+  POST            cart/remove/{key} ................................... cart.remove ΓÇ║ PosCartController@removeFromCart
+  GET|HEAD        contact ...................................................... contact ΓÇ║ DashboardController@contact
+  POST            contact ......................................... contact.submit ΓÇ║ DashboardController@submitContact
+  GET|HEAD        crm .................................................................. crm ΓÇ║ DashboardController@crm
+  POST            currency/switch ................................ currency.switch ΓÇ║ CurrencyController@switchCurrency
+  GET|HEAD        dashboard .................................................... dashboard ΓÇ║ DashboardController@index
+  GET|HEAD        expenses .................................................. expenses.index ΓÇ║ ExpenseController@index
+  POST            expenses .................................................. expenses.store ΓÇ║ ExpenseController@store
+  GET|HEAD        expenses/create ......................................... expenses.create ΓÇ║ ExpenseController@create
+  DELETE          expenses/{expense} .................................... expenses.destroy ΓÇ║ ExpenseController@destroy
+  GET|HEAD        faq ..................................................................... faq ΓÇ║ PublicController@faq
+  GET|HEAD        features ...................................................... features ΓÇ║ PublicController@features
+  GET|HEAD        feedback ............................................... feedback.create ΓÇ║ FeedbackController@create
+  POST            feedback ................................................. feedback.store ΓÇ║ FeedbackController@store
+  GET|HEAD        feedback/my .............................................. feedback.index ΓÇ║ FeedbackController@index
+  GET|HEAD        how-it-works ............................................ how-it-works ΓÇ║ PublicController@howItWorks
+  GET|HEAD        inventory .............................................. inventory.index ΓÇ║ InventoryController@index
+  POST            inventory/adjust ..................................... inventory.adjust ΓÇ║ InventoryController@adjust
+  GET|HEAD        inventory/{product}/history ........................ inventory.history ΓÇ║ InventoryController@history
+  GET|HEAD        invoices .................................................. invoices.index ΓÇ║ InvoiceController@index
+  POST            invoices .................................................. invoices.store ΓÇ║ InvoiceController@store
+  GET|HEAD        invoices/create ......................................... invoices.create ΓÇ║ InvoiceController@create
+  GET|HEAD        invoices/{invoice} .......................................... invoices.show ΓÇ║ InvoiceController@show
+  GET|HEAD        login ............................................................. login ΓÇ║ AuthController@showLogin
+  POST            login ......................................................................... AuthController@login
+  POST            logout .............................................................. logout ΓÇ║ AuthController@logout
+  GET|HEAD        notifications .................................... notifications ΓÇ║ DashboardController@notifications
+  GET|HEAD        orders ........................................................ orders.index ΓÇ║ OrderController@index
+  POST            orders ........................................................ orders.store ΓÇ║ OrderController@store
+  GET|HEAD        parties ...................................................... parties.index ΓÇ║ PartyController@index
+  POST            parties ...................................................... parties.store ΓÇ║ PartyController@store
+  DELETE          parties/{party} .......................................... parties.destroy ΓÇ║ PartyController@destroy
+  GET|HEAD        payroll .................................................... payroll.index ΓÇ║ PayrollController@index
+  POST            payroll/process ........................................ payroll.process ΓÇ║ PayrollController@process
+  POST            payroll/staff ................................... payroll.staff.store ΓÇ║ PayrollController@storeStaff
+  GET|HEAD        payroll/staff/create .......................... payroll.staff.create ΓÇ║ PayrollController@createStaff
+  GET|HEAD        payroll/{payroll}/payslip .............................. payroll.payslip ΓÇ║ PayrollController@payslip
+  GET|HEAD        pos .................................................................... pos ΓÇ║ PosCartController@pos
+  GET|HEAD        pricing ............................................. subscription.pricing ΓÇ║ PricingController@index
+  GET|HEAD        products .................................................. products.index ΓÇ║ ProductController@index
+  POST            products .................................................. products.store ΓÇ║ ProductController@store
+  GET|HEAD        products/create ......................................... products.create ΓÇ║ ProductController@create
+  GET|HEAD        products/{product} .......................................... products.show ΓÇ║ ProductController@show
+  PUT|PATCH       products/{product} ...................................... products.update ΓÇ║ ProductController@update
+  DELETE          products/{product} .................................... products.destroy ΓÇ║ ProductController@destroy
+  GET|HEAD        products/{product}/edit ..................................... products.edit ΓÇ║ ProductController@edit
+  GET|HEAD        profile .......................................................... profile ΓÇ║ ProfileController@index
+  PUT             profile .................................................. profile.update ΓÇ║ ProfileController@update
+  POST            profile/avatar ..................................... profile.avatar ΓÇ║ ProfileController@updateAvatar
+  PUT             profile/password ............................... profile.password ΓÇ║ ProfileController@updatePassword
+  GET|HEAD        purchases/bills ............................. purchases.bills.index ΓÇ║ Purchases\BillController@index
+  POST            purchases/bills ............................. purchases.bills.store ΓÇ║ Purchases\BillController@store
+  GET|HEAD        purchases/bills/create .................... purchases.bills.create ΓÇ║ Purchases\BillController@create
+  GET|HEAD        purchases/bills/{bill} ........................ purchases.bills.show ΓÇ║ Purchases\BillController@show
+  GET|HEAD        purchases/creditors ................. purchases.creditors.index ΓÇ║ Purchases\CreditorController@index
+  GET|HEAD        purchases/orders .................. purchases.orders.index ΓÇ║ Purchases\PurchaseOrderController@index
+  POST            purchases/orders .................. purchases.orders.store ΓÇ║ Purchases\PurchaseOrderController@store
+  GET|HEAD        purchases/orders/create ......... purchases.orders.create ΓÇ║ Purchases\PurchaseOrderController@create
+  POST            purchases/orders/{order}/convert-bill purchases.orders.convert-bill ΓÇ║ Purchases\PurchaseOrderControΓÇª
+  GET|HEAD        purchases/payments ................ purchases.payments.index ΓÇ║ Purchases\PaymentMadeController@index
+  POST            purchases/payments ................ purchases.payments.store ΓÇ║ Purchases\PaymentMadeController@store
+  GET|HEAD        purchases/payments/create ....... purchases.payments.create ΓÇ║ Purchases\PaymentMadeController@create
+  GET|HEAD        register .................................................... register ΓÇ║ AuthController@showRegister
+  POST            register ................................................................... AuthController@register
+  GET|HEAD        reports ........................................................... reports ΓÇ║ ReportController@index
+  GET|HEAD        reports/balance-sheet ........................ reports.balance-sheet ΓÇ║ ReportController@balanceSheet
+  GET|HEAD        reports/profit-loss .............................. reports.profit-loss ΓÇ║ ReportController@profitLoss
+  GET|HEAD        reports/trial-balance ........................ reports.trial-balance ΓÇ║ ReportController@trialBalance
+  GET|HEAD        sales/credit-notes ..................... sales.credit-notes.index ΓÇ║ Sales\CreditNoteController@index
+  POST            sales/credit-notes ..................... sales.credit-notes.store ΓÇ║ Sales\CreditNoteController@store
+  GET|HEAD        sales/credit-notes/create ............ sales.credit-notes.create ΓÇ║ Sales\CreditNoteController@create
+  GET|HEAD        sales/orders ................................. sales.orders.index ΓÇ║ Sales\SalesOrderController@index
+  POST            sales/orders ................................. sales.orders.store ΓÇ║ Sales\SalesOrderController@store
+  GET|HEAD        sales/orders/create ........................ sales.orders.create ΓÇ║ Sales\SalesOrderController@create
+  POST            sales/orders/{order}/convert-invoice sales.orders.convert-invoice ΓÇ║ Sales\SalesOrderController@convΓÇª
+  GET|HEAD        sales/payments ........................ sales.payments.index ΓÇ║ Sales\PaymentReceivedController@index
+  POST            sales/payments ........................ sales.payments.store ΓÇ║ Sales\PaymentReceivedController@store
+  GET|HEAD        sales/payments/create ............... sales.payments.create ΓÇ║ Sales\PaymentReceivedController@create
+  GET|HEAD        sales/quotes ...................................... sales.quotes.index ΓÇ║ Sales\QuoteController@index
+  POST            sales/quotes ...................................... sales.quotes.store ΓÇ║ Sales\QuoteController@store
+  GET|HEAD        sales/quotes/create ............................. sales.quotes.create ΓÇ║ Sales\QuoteController@create
+  GET|HEAD        sales/quotes/{quote} ................................ sales.quotes.show ΓÇ║ Sales\QuoteController@show
+  POST            sales/quotes/{quote}/convert-invoice sales.quotes.convert-invoice ΓÇ║ Sales\QuoteController@convertToΓÇª
+  POST            sales/quotes/{quote}/convert-order sales.quotes.convert-order ΓÇ║ Sales\QuoteController@convertToOrder
+  GET|HEAD        sales/receipts ........................... sales.receipts.index ΓÇ║ Sales\SalesReceiptController@index
+  GET|HEAD        sales/receipts/{receipt} ................... sales.receipts.show ΓÇ║ Sales\SalesReceiptController@show
+  GET|HEAD        settings ................................................... settings ΓÇ║ DashboardController@settings
+  GET|HEAD        storage/{path} storage.local ΓÇ║ vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceΓÇª
+  PUT             storage/{path} storage.local.upload ΓÇ║ vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemΓÇª
+  GET|HEAD        subscription ........................................ subscription.portal ΓÇ║ PricingController@portal
+  GET|HEAD        subscription/checkout ........................... subscription.checkout ΓÇ║ PricingController@checkout
+  POST            subscription/pay ............................... subscription.pay ΓÇ║ PricingController@processPayment
+  GET|HEAD        tasks ........................................................... tasks.index ΓÇ║ TaskController@index
+  POST            tasks ........................................................... tasks.store ΓÇ║ TaskController@store
+  GET|HEAD        tasks/create .................................................. tasks.create ΓÇ║ TaskController@create
+  GET|HEAD        tasks/{task} ...................................................... tasks.show ΓÇ║ TaskController@show
+  PUT|PATCH       tasks/{task} .................................................. tasks.update ΓÇ║ TaskController@update
+  DELETE          tasks/{task} ................................................ tasks.destroy ΓÇ║ TaskController@destroy
+  GET|HEAD        tasks/{task}/edit ................................................. tasks.edit ΓÇ║ TaskController@edit
+  POST            tasks/{task}/status ..................................... tasks.status ΓÇ║ TaskController@updateStatus
+  GET|HEAD        taxes ............................................................ taxes.index ΓÇ║ TaxController@index
+  POST            taxes ............................................................ taxes.store ΓÇ║ TaxController@store
+  GET|HEAD        up ..... vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:219
+  GET|HEAD        users ........................................................... users.index ΓÇ║ UserController@index
+  POST            users ........................................................... users.store ΓÇ║ UserController@store
+  GET|HEAD        users/create .................................................. users.create ΓÇ║ UserController@create
+  GET|HEAD        users/{user} ...................................................... users.show ΓÇ║ UserController@show
+  PUT|PATCH       users/{user} .................................................. users.update ΓÇ║ UserController@update
+  DELETE          users/{user} ................................................ users.destroy ΓÇ║ UserController@destroy
+  GET|HEAD        users/{user}/edit ................................................. users.edit ΓÇ║ UserController@edit
+
+                                                                                                  Showing [207] routes
+
